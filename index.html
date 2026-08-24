@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelMate — Find somewhere worth remembering</title>
+  <meta name="description" content="TravelMate helps you find a destination that actually feels like you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="index.html"><span>t</span> TravelMate</a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">GO SOMEWHERE YOU'LL REMEMBER</p>
+        <h1>Don't just take a trip.<br><em>Find your place.</em></h1>
+        <p class="hero-text">A little inspiration for when you know you need to get away, but haven't figured out where yet.</p>
+        <a class="primary-btn" href="#recommendations">Explore ideas <span>↓</span></a>
+      </div>
+      <div class="hero-note">
+        <span>01</span>
+        <p>beaches<br>temples<br>new places</p>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="section-label">01 — START HERE</div>
+      <div>
+        <h2>Where are you<br><em>in the mood for?</em></h2>
+        <p class="lead">No complicated planning. Pick a vibe, look around, and see what catches your eye.</p>
+      </div>
+    </section>
+
+    <section id="recommendations" class="choice-grid section">
+      <button class="choice-card" data-scroll="beaches">
+        <span class="choice-number">01</span>
+        <div>
+          <h3>Beach days</h3>
+          <p>Salt in the air, no shoes required.</p>
+        </div>
+        <span class="arrow">↗</span>
+      </button>
+      <button class="choice-card" data-scroll="temples">
+        <span class="choice-number">02</span>
+        <div>
+          <h3>Quiet temples</h3>
+          <p>History, detail, and a slower pace.</p>
+        </div>
+        <span class="arrow">↗</span>
+      </button>
+      <button class="choice-card" data-scroll="country">
+        <span class="choice-number">03</span>
+        <div>
+          <h3>Pick a country</h3>
+          <p>Tell us what part of the world feels right.</p>
+        </div>
+        <span class="arrow">↗</span>
+      </button>
+    </section>
+
+    <section id="beaches" class="destination-section section">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">02 — BEACH</div>
+          <h2>For the days<br><em>that feel endless.</em></h2>
+        </div>
+        <p>Two very different ways to spend a day beside the sea.</p>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card tall">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85" alt="Tropical beach with clear blue water">
+          <div class="card-overlay">
+            <span>01 / BEACH</span>
+            <h3>Turquoise mornings</h3>
+            <p>For when your only plan is swimming until sunset.</p>
+          </div>
+        </article>
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=85" alt="Palm trees beside a tropical beach">
+          <div class="card-overlay">
+            <span>02 / BEACH</span>
+            <h3>Slow island evenings</h3>
+            <p>Warm sand, palms moving in the wind, dinner somewhere nearby.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="temples" class="destination-section section warm">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">03 — TEMPLES</div>
+          <h2>Places with a little<br><em>more story.</em></h2>
+        </div>
+        <p>Good for curious people who would rather wander than rush.</p>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85" alt="Ancient temple architecture in India">
+          <div class="card-overlay">
+            <span>01 / TEMPLE</span>
+            <h3>Old stone, new memories</h3>
+            <p>Walk slowly. Look up. There's usually something you miss when you hurry.</p>
+          </div>
+        </article>
+        <article class="destination-card tall">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1200&q=85" alt="Temple in Japan surrounded by trees">
+          <div class="card-overlay">
+            <span>02 / TEMPLE</span>
+            <h3>Quiet corners of Japan</h3>
+            <p>Wood, gardens, lanterns and that rare feeling of everything being still.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="country" class="country-section section">
+      <div class="section-label">04 — YOUR NEXT COUNTRY</div>
+      <div class="country-top">
+        <h2>Choose a country.<br><em>We'll give you a reason.</em></h2>
+        <p>Sometimes the hardest part is simply picking a direction.</p>
+      </div>
+
+      <div class="country-picker">
+        <button class="country-btn active" data-country="india">India</button>
+        <button class="country-btn" data-country="japan">Japan</button>
+        <button class="country-btn" data-country="italy">Italy</button>
+      </div>
+
+      <div id="country-result" class="country-result">
+        <div>
+          <span class="result-kicker">IF YOU PICK INDIA</span>
+          <h3>Start with Rajasthan.</h3>
+          <p>Colourful streets, huge forts, late-night chai and enough history to keep you looking up the whole trip.</p>
+        </div>
+        <div class="result-image">
+          <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=85" alt="Historic architecture in Rajasthan">
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <p class="eyebrow">ONE LAST THING</p>
+      <h2>Leave with a plan.<br><em>Come back with a story.</em></h2>
+      <a class="primary-btn" href="contact.html">Tell us what you like <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><a class="brand" href="index.html"><span>t</span> TravelMate</a></div>
+    <p>Made for people who'd rather collect places than things.</p>
+    <div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
